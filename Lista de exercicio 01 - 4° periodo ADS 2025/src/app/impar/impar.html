@@ -1,0 +1,15 @@
+<div>
+  <h2>Exercicio 07 O número é impar ou par? </h2>
+  
+  <div style="margin-bottom: 1rem">
+  
+  <input type="number" [(ngModel)]="num" class="inputPadrao" placeholder="Informe um numero: "
+  style="marigin-bottom: 0.5rem"/>
+  
+  </div>
+  <button class="botaoPadrao" (click)="impar()">Verificar Número: </button>
+  <div *ngIf="resultado !=null" style="margin-top: 1rem, font-weigth">
+  O número é: {{resultado}}
+  </div>
+  
+  </div>

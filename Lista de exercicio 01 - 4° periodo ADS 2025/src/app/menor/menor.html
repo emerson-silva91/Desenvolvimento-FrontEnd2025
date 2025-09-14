@@ -1,0 +1,23 @@
+<div>
+  <h2>Exercicio 06 Qual é o Menor número?</h2>
+  <div style="margin-bottom: 1rem">
+
+    <input type="number" [(ngModel)]="numero1" class="inputPadrao" placeholder="Informe um numero: "
+    style="marigin-bottom: 0.5rem"/>
+
+    <input type="number" [(ngModel)]="numero2" class="inputPadrao" placeholder="Informe um numero: "
+style="marigin-bottom: 0.5rem"/>
+
+  <input type="number" [(ngModel)]="numero3" class="inputPadrao" placeholder="Informe um numero: "
+style="marigin-bottom: 0.5rem"/>
+
+  <input type="number" [(ngModel)]="numero4" class="inputPadrao" placeholder="Informe um numero: "
+style="marigin-bottom: 0.5rem"/>
+  
+  </div>
+  <button class="botaoPadrao" (click)="calMenor()">Verificar o Menor número: </button>
+  <div *ngIf="resultado !=null" style="margin-top: 1rem, font-weigth">
+    O menor número é: {{resultado}}
+    </div>
+
+</div>

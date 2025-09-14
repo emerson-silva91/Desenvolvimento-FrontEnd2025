@@ -1,0 +1,15 @@
+<div>
+  <h2>Exercicio 08 Codigo Produto: </h2>
+
+  <div style="margin-bottom: 1rem">
+  
+    <input type="text" [(ngModel)]="codigo" class="inputPadrap" placeholder="Digite o codigo do produto: " style="margin-bottom: 0.5rem" />
+
+  </div>
+  <button class="botaPadrao" (click)=" verificaProd()">Selecionar Produto</button>
+
+  <div *ngIf="produto !=null" style="margin-top: 1 rem, font-weigth">
+  {{produto}}
+  </div>
+
+</div>

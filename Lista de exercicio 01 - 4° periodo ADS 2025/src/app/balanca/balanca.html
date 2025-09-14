@@ -1,0 +1,25 @@
+<div>
+  <h2>Exercicio 02 Quilo</h2>
+  <div style="margin-bottom: 1rem">
+    <input
+      [(ngModel)]="valorQuilo"
+      class="inputPadrao"
+      type="number"
+      placeholder="Informe o valor do quilo: "
+      style="margin-bottom: 0.5rem"
+    />
+    <input
+      [(ngModel)]="produtoQuanti"
+      class="inputPadrao"
+      type="number"
+      placeholder="Informe a quantidade: "
+      style="margin-bottom: 0.5rem"
+    />
+  </div>
+  
+  <button class="botaoPadrao" (click)="pesar()">Pesar</button>
+
+  <div *ngIf="total !==null" style="margin-top: 1rem, font-weigth">
+    Total: R$ {{total}}
+  </div>
+</div>

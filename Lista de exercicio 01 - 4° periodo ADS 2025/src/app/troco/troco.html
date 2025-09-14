@@ -1,0 +1,22 @@
+<div class="cardPrincipal1">
+  <h2>Exercicio 01 Troco</h2>
+  <div style="margin-bottom: 1rem">
+    <input
+      [(ngModel)]="numero1"
+      class="inputPadrao1"
+      type="number"
+      placeholder="Informe um número"
+      style="margin-bottom: 0.5rem"
+    />
+    <input
+      [(ngModel)]="numero2"
+      class="inputPadrao1"
+      type="number"
+      placeholder="Informe um número"
+    />
+  </div>
+  <button class="botaoPadrao1" (click)="troco()">Subtrair</button>
+  <div *ngIf="resultado !== null" style="margin-top: 1rem; font-weigth: bold">
+    Troco: {{ resultado }}
+  </div>
+</div>

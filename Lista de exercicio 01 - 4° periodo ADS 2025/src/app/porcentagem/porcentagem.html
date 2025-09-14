@@ -1,0 +1,12 @@
+<div>
+  <h2>Exercicio 03 Porcentagem</h2>
+    <div style="margin-bottom: 1rem">
+      <input [(ngModel)]="saldo" class="inputPadrao" type="number" placeholder="informe um valor: " style="margin-bottom: 0.5rem"/>
+    </div>
+    <button class="botaoPadrao" (click)="porcentagem()">Calcular bonus: </button>
+    <div *ngIf="saldoTotal !==null" style="margin-top: 1rem, font-weigth">
+      Total: {{saldoTotal}}
+    </div>
+
+
+</div>
